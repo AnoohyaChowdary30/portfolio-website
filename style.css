@@ -1,0 +1,308 @@
+.left h1{
+    font-style: italic;
+    margin:0;
+    margin-bottom: 0%;
+    padding:0%
+}
+.left h5{
+color:darkslategrey;
+margin-left: 30%;
+margin-top: 0%;
+font-style:calc()
+}
+.tagline{
+    display: inline-block;
+    margin-top:-10px ;
+}
+.left p {
+    width: 400px;
+}
+
+ 
+body{
+    background-color: peachpuff;
+    margin: 0%;
+    padding: 20px;
+    
+}
+.skills{
+   
+    border-left: 0px;
+    margin-left: 0%;
+    clear: both;
+}
+.skills-container{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap:0px;
+}
+.skill-btn{
+    position: relative;
+    padding:0px;
+    border:1px solid #ddd;
+    border-radius: 30px;
+    background: grey;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+button{
+    border-radius: 20px;
+    
+}
+.skill-btn:hover{
+    background: black;
+    color: white;
+}
+.level{
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.skill-btn:hover .level{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.education{
+    width: 50%;
+    display: block;
+    text-align: left;
+    margin-left: 0;
+    padding-left:0;
+}
+.edu-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  width:105%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  
+  text-align: left;
+
+}
+
+.edu-box h3 {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 2px;
+
+}
+.edu-row {
+  display: flex;
+  justify-content: space-between;  /* pushes them apart */
+  align-items: center;
+   margin-left: 0%;
+}
+
+.edu-row p {
+  margin:  0;
+  font-size: 13px;
+ border-left: 0;
+ 
+}
+
+.edu-row span {
+  white-space: nowrap;
+  color: gray;
+  font-size: 12px;
+  
+}
+.page-container {
+
+  display: flex;
+  align-items: center;
+  justify-content:center ;  /*CHANGE THIS */
+  max-width: 1100px;
+  margin:  auto;
+  padding-left: 20px;           /* 👈 small left spacing */
+  gap: 0px;
+  position: relative;
+  left:10%;
+}
+
+.left-content {
+ 
+
+  flex: 0 0 auto;
+  display: inline-block;   /* 👈 shrink to content width */
+  max-width: 50%;        /* optional control */
+
+  /* background: lightblue;       /* 👈 FIXED width */
+
+}
+
+.right-image {
+
+  width: 230px;
+  height: 337px;
+  margin-left: -70px;   /* small spacing only */
+  position: relative;
+  overflow: hidden;   /* 👈 VERY IMPORTANT */
+
+}
+
+.right-image img {
+  width: 100%;
+  border-radius: 130px;
+  object-fit: cover;
+
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+
+  border-radius: 130px;   /* keep simple for now */
+
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  .right-image {
+    position: static;
+    text-align: center;
+    margin-top: 20px; 
+  width: 280px;
+  flex-shrink: 0;
+  margin-left: -20px; /* moves image LEFT */
+  position: relative;
+  width: 200px;
+  height: 337px;
+
+
+  }
+}
+.contact-card {
+  margin-top: 0px;
+  padding: 0px;
+  margin-left: 0%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+}
+
+.contact-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0px;
+  font-size: 13px;
+
+
+}
+
+.contact-box i {
+  color: #2c3e50;
+  font-size: 14px;
+  margin-left: 0;
+  width: 14px;   /* 🔥 control icon width */
+
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* ✅ aligns everything left */
+}
+
+.resume-btn:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.social-link{
+    color:black
+}
+.social-link:hover{
+    color:gray;
+}
+
+.languages{
+    position: relative;
+    padding:0px;
+    margin-top: 0%;
+  
+}
+.lang{
+    position: relative;
+  
+    cursor:pointer;
+
+}
+.level2{
+    visibility: hidden;
+    position: absolute;
+    top:25px;
+    left:0;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    padding:4px 8px;
+    border-radius: 8px;
+
+}
+.lang:hover .level2{
+    visibility: visible;
+}
+
+.projects{
+   margin-top: 5px;
+   width: 70%;
+   margin-left: -12%;
+   border-left: 0%;
+   text-align:left;
+   
+}
+
+.projects h4{
+   margin-bottom: 20px;
+}
+
+.project-card{
+   padding: 10px;
+   margin-bottom: 5px;
+   border-radius: 12px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h5{
+   margin-bottom: 10px;
+}
+
+.project-card p{
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.project-card span{
+   font-size: 13px;
+   color: gray;
+   font-weight: bold;
+}
+footer{
+   text-align:center;
+   margin-top:25px;
+   padding:10px;
+   color:gray;
+   font-size:14px;
+}
